@@ -1,0 +1,13 @@
+// for Security reason
+  Future<void> isRooted() async {
+    try {
+      bool result = Platform.isIOS
+          ? await FlutterRootJailbreak.isJailBroken
+          : await FlutterRootJailbreak.isRooted;
+      _result = result;
+    } catch (e) {
+      e.toString();
+    }
+
+    setState(() {});
+  }
