@@ -1,5 +1,20 @@
+
+
 // for Security reason
-  Future<void> isRooted() async {
+
+
+
+
+
+
+
+
+
+import 'package:flutter_root_jailbreak/flutter_root_jailbreak.dart';
+
+
+
+Future<void> isRooted() async {
     try {
       bool result = Platform.isIOS
           ? await FlutterRootJailbreak.isJailBroken
